@@ -1,0 +1,7 @@
+--- 
+
+- set_fact:
+    groups_list: "{{ groups }}"
+
+- include: "include.yml"
+  with_items: "{{ groups_list }}"
